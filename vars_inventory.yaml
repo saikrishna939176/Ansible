@@ -1,5 +1,6 @@
-- name: variables
+- name: variables from inventory
   hosts: localhost
+  connection: local
   # vars_files:
   # - vars.yml
   tasks:
