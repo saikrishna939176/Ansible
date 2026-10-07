@@ -1,0 +1,11 @@
+- name: Remove ansible & nginx
+  hosts: all
+  tasks:
+  - name: Remove ansible
+    ansible.builtin.dnf:
+      name: ansible
+      state: absent
+  - name: Remove nginx
+    ansible.builtin.dnf:
+      name: nginx
+      state: absent
