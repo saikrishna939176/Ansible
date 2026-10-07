@@ -1,0 +1,11 @@
+- name: remove nginx
+  hosts: web
+  become: yes
+  tasks:
+  - name: remove nginx
+    ansible.builtin.dnf:
+      name: nginx
+      state: absent
+      
+      
+
