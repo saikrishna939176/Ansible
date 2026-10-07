@@ -6,7 +6,7 @@
   hosts: localhost
   tasks:
   - name: print information
-    # vars:
-    #   Course: "Terraform"
+    vars:
+      Course: "Terraform"
     ansible.builtin.debug:
       msg: "Hi, we are learning {{Course}} from Trainer {{Trainer}}, duration is {{Duration}}"
