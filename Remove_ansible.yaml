@@ -1,5 +1,5 @@
 - name: Remove ansible & nginx
-  hosts: all
+  hosts: web
   tasks:
   - name: Remove ansible
     ansible.builtin.dnf:
