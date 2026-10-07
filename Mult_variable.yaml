@@ -2,9 +2,9 @@
   hosts: localhost
   connection: local
   vars:
-    Course: "Terraform-vars"
-    Trainer: "deva"
-    Duration: "120 hrs"
+    # Course: "Terraform-vars"
+    # Trainer: "deva"
+    # Duration: "120 hrs"
   vars_files:
   # - vars.yml
   vars_prompt:
