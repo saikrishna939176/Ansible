@@ -8,6 +8,6 @@
 - name: PlAY-2
   hosts: localhost
   tasks:
-    - name: PlAY-2 and Task-2
-      ansible.builtin.debug:
+  - name: PlAY-2 and Task-2
+    ansible.builtin.debug:
       msg: "Hello I am learning Devops Play-2"
