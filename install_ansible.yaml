@@ -1,0 +1,8 @@
+- name: install ansible
+  hosts: all
+  become: yes
+  tasks:
+  - name: install ansible
+    ansible.builtin.dnf:
+      name: ansible
+      state: installed
