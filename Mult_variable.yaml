@@ -16,4 +16,4 @@
     # vars:
     #   Course: "Terraform-override"
     ansible.builtin.debug:
-      msg: "Hi, we are learning {{Course}} from Trainer {{Trainer}}, duration is {{Duration}}"
+      msg: "Hi, we are learning {{Course}}"
