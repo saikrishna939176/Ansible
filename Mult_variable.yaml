@@ -1,6 +1,6 @@
 - name: variable preference
   hosts: localhost
-  #connection: local
+  connection: local
   vars:
     # Course: "Terraform-vars"
     # Trainer: "deva"
