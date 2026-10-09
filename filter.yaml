@@ -23,4 +23,4 @@
   tasks:
   - name: Lower case
     ansible.builtin.debug:
-      msg: "Hi, {{Wishes | upper}}"
+      msg: "Hi, {{Wishes | Upper}}"
