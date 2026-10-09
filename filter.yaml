@@ -4,5 +4,14 @@
     ansible.builtin.debug:
       msg: "Hello {{Course | default('Ansible')}}"
   hosts: localhost
+  # vars:
+  #   Course: "Java"
+
+- name: lower case
+  hosts: localhost
   vars:
-    Course: "Java"
+    Wishes: Hello Good
+  tasks:
+  - name: Lower case
+    ansible.builtin.debug:
+      msg: "Hi, {{Wishes | lower}}"
