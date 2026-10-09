@@ -36,3 +36,12 @@
   - name: remove duplicates1
     ansible.builtin.debug:
       msg: "Remove {{Lists | unique}}"
+
+- name: print min and max values
+  hosts: localhost
+  vars:
+    ages: [12,3,4,55,66]
+  tasks:
+  - name: print min and max values
+  ansible.builtin.debug:
+    msg: "Max value is {{ages | max}} and Min value is {{ages | min}}"
