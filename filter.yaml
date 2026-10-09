@@ -28,9 +28,7 @@
 - name: remove duplicates
   hosts: localhost
   vars:
-    List:
-    - 12
-    - 13
+    Numbers: [1,2,3,3,4,4]
   tasks:
   - name: remove duplicates
     anisble.builtin.debug:
