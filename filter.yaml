@@ -80,4 +80,4 @@
 
   - name: after convert
     ansible.builtin.debug:
-      msg: "After convert: {{my_list | list2dict}}"
+      msg: "After convert: {{my_list | items2dict}}"
