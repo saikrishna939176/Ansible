@@ -23,7 +23,7 @@
   tasks:
   - name: Lower case
     ansible.builtin.debug:
-      msg: "Hi, {{Wishes | Upper}}"
+      msg: "Hi, {{Wishes | upper}}"
 
 - name: remove duplicates
   hosts: localhost
