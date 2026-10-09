@@ -11,3 +11,10 @@
     - { name: 'nginx', state: 'latest'}
     - { name: 'git', state: 'absent'}
     - { name: 'git', state: 'installed'}
+  - name: Run services
+    ansible.builtin.service:
+      name: "{{item.name}}"
+      state: "{{item.state}}"
+    loop:
+    - { name: 'nginx', state: 'started'}
+    - { name: 'nginx', state: 'stopped'}
