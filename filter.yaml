@@ -15,3 +15,12 @@
   - name: Lower case
     ansible.builtin.debug:
       msg: "Hi, {{Wishes | lower}}"
+
+- name: Upper case
+  hosts: localhost
+  vars:
+    Wishes: Hello Good
+  tasks:
+  - name: Lower case
+    ansible.builtin.debug:
+      msg: "Hi, {{Wishes | upper}}"
