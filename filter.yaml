@@ -29,10 +29,8 @@
   hosts: localhost
   vars:
     List:
-    - Hi
-    - Hi
-    - Hellow
-    - Good
+    - 12
+    - 13
   tasks:
   - name: remove duplicates
     anisble.builtin.debug:
