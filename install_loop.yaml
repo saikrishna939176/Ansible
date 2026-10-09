@@ -9,3 +9,4 @@
     - { name: 'mariadb105', state: 'latest'}
     - { name: 'nginx', state: 'latest'}
     - { name: 'git', state: 'absent'}
+    - { name: 'git', state: 'installed'}
