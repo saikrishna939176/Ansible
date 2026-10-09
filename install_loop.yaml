@@ -1,0 +1,11 @@
+- name: install packages
+  hosts: localhost
+  tasks:
+  - name: install packages
+    ansible.builtin.dnf:
+      name: "{{item.name}}"
+      state: "{{item.state}}"
+    loop:
+    - { name: 'mariadb105', state: 'latest'}
+    - { name: 'nginx', state: 'latest'}
+    - { name: 'git', state: 'absent'}
