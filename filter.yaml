@@ -4,3 +4,5 @@
     ansible.builtin.debug:
       msg: "Hello {{Course | default('Ansible')}}"
   hosts: localhost
+  vars:
+    Course: "Java"
