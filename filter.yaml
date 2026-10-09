@@ -35,4 +35,4 @@
   tasks:
   - name: remove duplicates1
     ansible.builtin.debug:
-      msg: "Remove {{List}}"
+      msg: "Remove {{Lists}}"
