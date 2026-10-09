@@ -28,8 +28,11 @@
 - name: remove duplicates
   hosts: localhost
   vars:
-    Numbers: [1,2,3,3,4,4]
+    Lists:
+    - sai
+    - sai
+    - krishna
   tasks:
   - name: remove duplicates1
-    anisble.builtin.debug:
+    ansible.builtin.debug:
       msg: "Remove {{List}}"
