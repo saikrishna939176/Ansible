@@ -30,6 +30,6 @@
   vars:
     Numbers: [1,2,3,3,4,4]
   tasks:
-  - name: remove duplicates
+  - name: remove duplicates1
     anisble.builtin.debug:
       msg: "Remove {{List}}"
