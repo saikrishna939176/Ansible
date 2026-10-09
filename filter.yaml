@@ -24,3 +24,16 @@
   - name: Lower case
     ansible.builtin.debug:
       msg: "Hi, {{Wishes | Upper}}"
+
+- name: remove duplicates
+  hosts: localhost
+  vars:
+    List:
+    - Hi
+    - Hi
+    - Hellow
+    - Good
+  tasks:
+  - name: remove duplicates
+    anisble.builtin.debug:
+      msg: "Remove {{List}}"
