@@ -47,3 +47,21 @@
       msg: |-
         Given values are {{ ages }}
         Max value is {{ ages | max }} and Min value is {{ ages | min }}
+
+
+- name: convert dictionary into items/Lists
+  hosts: localhost
+  vars:
+    my_dict: # this is called as dictionary or map or key/value pairs
+      Course: Ansible
+      Trainer: deva
+      Duration: 2hrs
+
+  tasks:
+  - name: before convert
+    ansible.builtin.debug:
+      msg: "Before convert: {{my_dict}}"
+
+  - name: after convert
+    ansible.builtin.debug:
+      msg: "After convert: {{my_dict|dict2items}}"
